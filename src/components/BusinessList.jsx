@@ -1,8 +1,8 @@
 import Business from "./Business";
 
 const BusinessList = (props) => {
-    const businesses = props.data.map((businessData) => {
-        return <Business data={businessData} />;
+    const businesses = props.data.map((businessData, index) => {
+        return <Business data={businessData} key={index} />;
     });
 
     return (
